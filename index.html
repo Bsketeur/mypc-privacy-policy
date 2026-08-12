@@ -2,54 +2,370 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Politique de Confidentialité – MyPC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Politique de confidentialité de MyPC : données collectées, finalités, prestataires, conservation et droits des utilisateurs.">
+  <title>Politique de confidentialité / Privacy Policy – MyPC</title>
   <style>
-    body {
-      font-family: sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-      background-color: #111;
-      color: #eee;
-    }
-    h1, h2 {
-      color: #C6B17A;
-    }
-    p {
-      line-height: 1.6;
-    }
+    :root { color-scheme: dark; --bg:#0b0f17; --panel:#121927; --panel2:#0d1421; --text:#f4f6fb; --muted:#a7b0c0; --gold:#c6b17a; --border:#273247; --link:#8bc1ff; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; background:var(--bg); color:var(--text); line-height:1.65; }
+    .container { width:min(980px,calc(100% - 32px)); margin:0 auto; padding:28px 0 56px; }
+    header, section { background:var(--panel); border:1px solid var(--border); border-radius:18px; padding:24px; margin-bottom:22px; }
+    h1,h2,h3 { color:var(--gold); line-height:1.25; }
+    h1 { margin:0 0 10px; } h2 { margin-top:0; } h3 { margin-top:26px; }
+    p,li { color:var(--text); } .muted { color:var(--muted); }
+    a { color:var(--link); text-decoration:none; } a:hover,a:focus { text-decoration:underline; }
+    nav,.languages { display:flex; flex-wrap:wrap; gap:10px; margin-top:16px; }
+    .pill,button.lang { border:1px solid var(--border); border-radius:999px; background:var(--panel2); color:var(--text); padding:9px 13px; font:inherit; cursor:pointer; }
+    button.lang[aria-pressed="true"] { border-color:var(--gold); color:var(--gold); }
+    .notice { border-left:4px solid var(--gold); padding:12px 14px; background:var(--panel2); border-radius:10px; }
+    .lang-section[hidden] { display:none; }
+    table { width:100%; border-collapse:collapse; margin:14px 0; font-size:15px; }
+    th,td { border:1px solid var(--border); padding:10px; vertical-align:top; text-align:left; }
+    th { color:var(--gold); background:var(--panel2); }
+    footer { text-align:center; color:var(--muted); font-size:14px; padding-top:4px; }
+    @media (max-width:700px){ .container{width:min(100% - 20px,980px);padding-top:14px} header,section{padding:18px;border-radius:14px} table{display:block;overflow-x:auto} }
+    @media print { nav,.languages{display:none} body{background:#fff;color:#000} header,section{border:0;background:#fff;color:#000} p,li,td{color:#000} .lang-section[hidden]{display:none!important} }
   </style>
 </head>
 <body>
-  <h1>Politique de Confidentialité</h1>
-  <p><strong>Dernière mise à jour :</strong> 6 juillet 2025</p>
+<main class="container">
+  <header>
+    <h1>MyPC — Politique de confidentialité / Privacy Policy</h1>
+    <p class="muted"><strong>Dernière mise à jour / Last updated:</strong> 12 août 2026 / August 12, 2026</p>
+    <nav aria-label="Navigation juridique">
+      <a class="pill" href="./index.html">Confidentialité / Privacy</a>
+      <a class="pill" href="./terms.html">CGU / Terms</a>
+      <a class="pill" href="./delete-account.html">Suppression du compte / Delete account</a>
+      <a class="pill" href="https://my-pc-pi.vercel.app/">Site MyPC</a>
+    </nav>
+    <div class="languages" aria-label="Language selector">
+      <button class="lang" data-lang="fr" aria-pressed="true">FR</button>
+      <button class="lang" data-lang="en" aria-pressed="false">EN</button>
+      <button class="lang" data-lang="es" aria-pressed="false">ES</button>
+      <button class="lang" data-lang="de" aria-pressed="false">DE</button>
+    </div>
+  </header>
 
-  <h2>1. Données collectées</h2>
-  <p>L’Application peut collecter les données suivantes : pseudonyme, email, adresse postale, PayPal, contenu utilisateur, données techniques.</p>
+  <section class="lang-section" data-lang-section="fr" lang="fr">
+    <h2>Politique de confidentialité</h2>
+    <p>La présente politique explique comment le service <strong>MyPC</strong> traite les données personnelles nécessaires au fonctionnement de l’application, de son API et de ses fonctionnalités communautaires et marketplace.</p>
+    <p class="notice"><strong>Responsable du traitement :</strong> le service MyPC. Contact vie privée : <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a>.</p>
 
-  <h2>2. Finalités de la collecte</h2>
-  <p>Gestion des comptes, échanges de cartes, paiements, support, sécurité, statistiques anonymisées.</p>
+    <h3>1. Données que nous traitons</h3>
+    <ul>
+      <li><strong>Compte et identité :</strong> pseudonyme, adresse e-mail, identifiant Firebase, prénom et nom lorsqu’ils sont fournis.</li>
+      <li><strong>Coordonnées et livraison :</strong> adresse postale, ville, code postal, pays et informations nécessaires à l’expédition.</li>
+      <li><strong>Paiement et transaction :</strong> adresse PayPal lorsqu’elle est fournie, identifiants de transaction, montants, frais de plateforme, statut des commandes et options de livraison. MyPC ne stocke pas les identifiants de connexion PayPal.</li>
+      <li><strong>Collection et marketplace :</strong> cartes possédées ou sauvegardées, catégories, listes de souhaits, annonces, prix, photos, historique associé et propositions de cartes.</li>
+      <li><strong>Fonctions sociales :</strong> abonnements, mentions « J’aime », conversations, messages et pièces jointes envoyées volontairement.</li>
+      <li><strong>Notifications :</strong> jeton de notification push et informations techniques nécessaires à l’envoi des notifications.</li>
+      <li><strong>Sécurité et fonctionnement :</strong> journaux d’activité, événements techniques, identifiants nécessaires à la prévention des abus et au diagnostic d’erreurs.</li>
+    </ul>
 
-  <h2>3. Partage des données</h2>
-  <p>Jamais revendues. Partage limité à PayPal, autorités légales, prestataires techniques sous contrat.</p>
+    <h3>2. Finalités et bases juridiques</h3>
+    <table>
+      <thead><tr><th>Finalité</th><th>Base principale</th></tr></thead>
+      <tbody>
+        <tr><td>Créer le compte, authentifier l’utilisateur, gérer la collection, la wishlist, les annonces, la messagerie, les commandes et la livraison.</td><td>Exécution du service demandé et des CGU.</td></tr>
+        <tr><td>Traiter et tracer les paiements, frais, commandes et obligations associées.</td><td>Exécution du service et, lorsque nécessaire, obligations légales.</td></tr>
+        <tr><td>Sécuriser MyPC, prévenir les abus, enquêter sur des incidents et maintenir la fiabilité du service.</td><td>Intérêt légitime de MyPC à protéger le service et ses utilisateurs, sous réserve des droits des personnes.</td></tr>
+        <tr><td>Envoyer des notifications demandées ou utiles au fonctionnement du compte.</td><td>Exécution du service et paramètres/autorisation de notification de l’appareil lorsque requis.</td></tr>
+      </tbody>
+    </table>
 
-  <h2>4. Durée de conservation</h2>
-  <p>Compte : actif. Transactions : 5 ans. Contenu : jusqu’à suppression du compte.</p>
+    <h3>3. Prestataires et destinataires</h3>
+    <p>Les données ne sont pas vendues. Elles peuvent être traitées, uniquement lorsque nécessaire, par les catégories de prestataires suivantes :</p>
+    <ul>
+      <li><strong>Google Firebase :</strong> authentification et notifications Firebase Cloud Messaging.</li>
+      <li><strong>Render :</strong> hébergement de l’API MyPC.</li>
+      <li><strong>Cloudinary :</strong> hébergement ou traitement des images envoyées/utilisées par MyPC.</li>
+      <li><strong>PayPal :</strong> traitement des paiements lorsque l’utilisateur utilise les fonctions de vente/achat concernées.</li>
+      <li><strong>Meilisearch :</strong> indexation et recherche des données du catalogue nécessaires à la recherche dans MyPC.</li>
+      <li><strong>Autorités ou conseils :</strong> lorsque la loi l’impose ou lorsque cela est nécessaire à la défense de droits.</li>
+    </ul>
+    <p>Certains prestataires peuvent traiter des données depuis des pays situés hors de l’Espace économique européen. Dans ce cas, les transferts doivent reposer sur un mécanisme reconnu par le droit applicable et sur les garanties du prestataire concerné.</p>
 
-  <h2>5. Sécurité</h2>
-  <p>Accès restreint, connexions HTTPS, hébergement sécurisé.</p>
+    <h3>4. Visibilité entre utilisateurs</h3>
+    <p>Les informations que vous rendez publiques ou partagez avec d’autres utilisateurs (par exemple pseudonyme, avatar, collections publiques, annonces, photos, messages ou statut marketplace) peuvent être visibles par les destinataires concernés. Évitez d’y inclure des données personnelles inutiles.</p>
 
-  <h2>6. Droits des utilisateurs</h2>
-  <p>Accès, rectification, effacement, opposition, portabilité. Contact : [ton email ici]</p>
+    <h3>5. Conservation</h3>
+    <ul>
+      <li><strong>Données de compte et de collection :</strong> pendant la durée d’utilisation du compte, puis supprimées ou anonymisées lorsqu’elles ne sont plus nécessaires, sous réserve des obligations de conservation.</li>
+      <li><strong>Compte inactif :</strong> MyPC peut mettre en place une suppression ou un archivage après une période d’inactivité raisonnable, avec information préalable lorsque cela est approprié.</li>
+      <li><strong>Commandes, paiements et pièces justificatives :</strong> conservés pendant la durée nécessaire au traitement de la transaction, aux litiges et aux obligations légales. Certaines pièces comptables peuvent devoir être conservées jusqu’à 10 ans.</li>
+      <li><strong>Journaux de sécurité :</strong> conservés pendant une durée limitée proportionnée aux besoins de sécurité, de diagnostic et de prévention des abus.</li>
+    </ul>
 
-  <h2>7. Cookies et traceurs</h2>
-  <p>Pas de cookies publicitaires. Outils techniques pour sécurité et statistiques.</p>
+    <h3>6. Suppression du compte</h3>
+    <p>Vous pouvez demander la suppression de votre compte et des données associées depuis la procédure indiquée sur la page <a href="./delete-account.html">Suppression du compte</a>. Les données qui doivent être conservées pour une obligation légale, la prévention de la fraude ou la défense de droits peuvent être isolées et conservées uniquement pendant la durée nécessaire.</p>
 
-  <h2>8. Modifications</h2>
-  <p>Politique sujette à modification. Notification en cas de changement important.</p>
+    <h3>7. Vos droits</h3>
+    <p>Selon votre situation et la législation applicable, vous pouvez disposer de droits d’accès, rectification, effacement, limitation, opposition et portabilité. Vous pouvez exercer vos droits à <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a>. Une vérification raisonnable de votre identité peut être demandée lorsqu’elle est nécessaire.</p>
+    <p>Les demandes sont traitées dans les meilleurs délais et, lorsque le RGPD s’applique, en principe dans un délai maximal d’un mois, sauf prolongation permise par la réglementation. Vous pouvez également saisir la CNIL si vous estimez que vos droits ne sont pas respectés.</p>
 
-  <h2>9. Contact</h2>
-  <p>Pour toute question : mypc.appoff@gmail.com</p>
+    <h3>8. Sécurité</h3>
+    <p>MyPC met en œuvre des mesures techniques et organisationnelles destinées à limiter les accès non autorisés, les pertes et les altérations de données, notamment l’authentification Firebase, les contrôles d’accès côté API et les connexions HTTPS. Aucun système n’offre toutefois une sécurité absolue.</p>
+
+    <h3>9. Permissions de l’appareil</h3>
+    <p>Selon les fonctions utilisées, MyPC peut demander l’accès aux photos ou à l’appareil photo pour ajouter/numériser des cartes, ainsi que l’autorisation d’envoyer des notifications. Ces permissions peuvent être refusées ou retirées dans les réglages de l’appareil, avec pour conséquence possible l’indisponibilité de la fonction correspondante.</p>
+
+    <h3>10. Cookies, publicité et suivi</h3>
+    <p>Cette page juridique n’installe aucun cookie publicitaire et n’intègre aucun outil de suivi publicitaire. MyPC ne vend pas les données personnelles à des annonceurs.</p>
+
+    <h3>11. Mineurs</h3>
+    <p>Les utilisateurs doivent disposer de la capacité juridique nécessaire pour utiliser les fonctionnalités concernées. Lorsqu’une autorisation parentale est requise par la loi ou par un prestataire de paiement, elle doit être obtenue.</p>
+
+    <h3>12. Modifications</h3>
+    <p>Cette politique peut être mise à jour pour refléter l’évolution de MyPC, de ses prestataires ou des obligations légales. La date de dernière mise à jour figure en haut de la page. En cas de changement important, une information appropriée pourra être affichée dans l’application.</p>
+
+    <h3>13. Contact</h3>
+    <p>Questions ou exercice de droits : <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a>.</p>
+  </section>
+
+  <section class="lang-section" data-lang-section="en" lang="en" hidden>
+    <h2>Privacy Policy</h2>
+    <p>This policy explains how <strong>MyPC</strong> processes personal data required to operate the application, its API, community features and marketplace functions.</p>
+    <p class="notice"><strong>Data controller:</strong> the MyPC service. Privacy contact: <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a>.</p>
+
+    <h3>1. Data we process</h3>
+    <ul>
+      <li><strong>Account and identity:</strong> username, email address, Firebase identifier, first and last name when provided.</li>
+      <li><strong>Contact and shipping:</strong> postal address, city, postal code, country and information required for shipment.</li>
+      <li><strong>Payment and transaction:</strong> PayPal address when provided, transaction identifiers, amounts, platform fees, order statuses and shipping options. MyPC does not store PayPal login credentials.</li>
+      <li><strong>Collection and marketplace:</strong> owned or saved cards, categories, wishlists, listings, prices, photos, related history and card proposals.</li>
+      <li><strong>Social features:</strong> follows, likes, conversations, messages and voluntarily submitted attachments.</li>
+      <li><strong>Notifications:</strong> push notification token and technical information needed to deliver notifications.</li>
+      <li><strong>Security and operation:</strong> activity logs, technical events and identifiers required to prevent abuse and diagnose errors.</li>
+    </ul>
+
+    <h3>2. Purposes and legal bases</h3>
+    <table>
+      <thead><tr><th>Purpose</th><th>Main legal basis</th></tr></thead>
+      <tbody>
+        <tr><td>Create accounts, authenticate users and provide collections, wishlists, listings, messaging, orders and shipping.</td><td>Performance of the requested service and these Terms.</td></tr>
+        <tr><td>Process and record payments, fees, orders and related obligations.</td><td>Performance of the service and, where required, legal obligations.</td></tr>
+        <tr><td>Protect MyPC, prevent abuse, investigate incidents and maintain service reliability.</td><td>MyPC's legitimate interest in protecting the service and its users, subject to users' rights.</td></tr>
+        <tr><td>Send notifications requested by or useful to the operation of the account.</td><td>Performance of the service and device notification settings/permission where required.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>3. Service providers and recipients</h3>
+    <p>Personal data is not sold. Where necessary, data may be processed by the following categories of providers:</p>
+    <ul>
+      <li><strong>Google Firebase:</strong> authentication and Firebase Cloud Messaging notifications.</li>
+      <li><strong>Render:</strong> hosting of the MyPC API.</li>
+      <li><strong>Cloudinary:</strong> hosting or processing of images submitted to or used by MyPC.</li>
+      <li><strong>PayPal:</strong> payment processing when users use the relevant buying/selling features.</li>
+      <li><strong>Meilisearch:</strong> indexing and searching catalog data required by MyPC search.</li>
+      <li><strong>Authorities or advisers:</strong> where required by law or necessary to establish, exercise or defend legal claims.</li>
+    </ul>
+    <p>Some providers may process data from countries outside the European Economic Area. Where applicable, such transfers must rely on a mechanism recognized under applicable law and the safeguards provided by the relevant provider.</p>
+
+    <h3>4. Visibility to other users</h3>
+    <p>Information you make public or share with other users (for example username, avatar, public collections, listings, photos, messages or marketplace status) may be visible to the relevant recipients. Do not include unnecessary personal data in public or shared content.</p>
+
+    <h3>5. Retention</h3>
+    <ul>
+      <li><strong>Account and collection data:</strong> while the account is in use, then deleted or anonymized when no longer needed, subject to applicable retention obligations.</li>
+      <li><strong>Inactive accounts:</strong> MyPC may implement deletion or archiving after a reasonable period of inactivity, with prior information where appropriate.</li>
+      <li><strong>Orders, payments and supporting records:</strong> for as long as needed to process the transaction, handle disputes and meet legal duties. Certain accounting records may need to be retained for up to 10 years.</li>
+      <li><strong>Security logs:</strong> for a limited period proportionate to security, diagnostic and abuse-prevention needs.</li>
+    </ul>
+
+    <h3>6. Account deletion</h3>
+    <p>You may request deletion of your account and associated data using the process described on the <a href="./delete-account.html">Delete account</a> page. Data that must be retained for legal obligations, fraud prevention or the establishment, exercise or defence of legal claims may be isolated and kept only for the necessary period.</p>
+
+    <h3>7. Your rights</h3>
+    <p>Depending on your circumstances and applicable law, you may have rights of access, rectification, erasure, restriction, objection and portability. Exercise your rights at <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a>. Reasonable identity verification may be requested when necessary.</p>
+    <p>Requests are handled without undue delay and, where the GDPR applies, generally within one month unless a lawful extension applies. You may also lodge a complaint with the CNIL if you believe your rights have not been respected.</p>
+
+    <h3>8. Security</h3>
+    <p>MyPC uses technical and organizational measures intended to reduce unauthorized access, loss and alteration, including Firebase authentication, API-side access controls and HTTPS connections. No system can guarantee absolute security.</p>
+
+    <h3>9. Device permissions</h3>
+    <p>Depending on the feature used, MyPC may request access to photos or the camera to add/scan cards and permission to send notifications. You may refuse or revoke these permissions in your device settings, although the related feature may then be unavailable.</p>
+
+    <h3>10. Cookies, advertising and tracking</h3>
+    <p>This legal page does not install advertising cookies or include advertising trackers. MyPC does not sell personal data to advertisers.</p>
+
+    <h3>11. Minors</h3>
+    <p>Users must have the legal capacity required to use the relevant features. Where parental authorization is required by law or by a payment provider, it must be obtained.</p>
+
+    <h3>12. Changes</h3>
+    <p>This policy may be updated to reflect changes to MyPC, its providers or legal requirements. The last-updated date appears at the top of this page. Material changes may also be notified within the app.</p>
+
+    <h3>13. Contact</h3>
+    <p>Questions or privacy requests: <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a>.</p>
+  </section>
+
+  <section class="lang-section" data-lang-section="es" lang="es" hidden>
+    <h2>Política de privacidad</h2>
+    <p>Esta política explica cómo el servicio <strong>MyPC</strong> trata los datos personales necesarios para el funcionamiento de la aplicación, su API, las funciones comunitarias y el marketplace.</p>
+    <p class="notice"><strong>Responsable del tratamiento:</strong> el servicio MyPC. Contacto de privacidad: <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a>.</p>
+
+    <h3>1. Datos que tratamos</h3>
+    <ul>
+      <li><strong>Cuenta e identidad:</strong> seudónimo, correo electrónico, identificador Firebase, nombre y apellidos cuando se facilitan.</li>
+      <li><strong>Contacto y envío:</strong> dirección postal, ciudad, código postal, país e información necesaria para el envío.</li>
+      <li><strong>Pago y transacción:</strong> dirección PayPal cuando se facilita, identificadores de transacción, importes, comisiones de plataforma, estado de pedidos y opciones de envío. MyPC no almacena credenciales de acceso a PayPal.</li>
+      <li><strong>Colección y marketplace:</strong> cartas poseídas o guardadas, categorías, listas de deseos, anuncios, precios, fotos, historial asociado y propuestas de cartas.</li>
+      <li><strong>Funciones sociales:</strong> seguidores, «me gusta», conversaciones, mensajes y archivos adjuntos enviados voluntariamente.</li>
+      <li><strong>Notificaciones:</strong> token de notificación push e información técnica necesaria para enviarlas.</li>
+      <li><strong>Seguridad y funcionamiento:</strong> registros de actividad, eventos técnicos e identificadores necesarios para prevenir abusos y diagnosticar errores.</li>
+    </ul>
+
+    <h3>2. Finalidades y bases jurídicas</h3>
+    <table>
+      <thead><tr><th>Finalidad</th><th>Base principal</th></tr></thead>
+      <tbody>
+        <tr><td>Crear la cuenta, autenticar al usuario y proporcionar colecciones, wishlist, anuncios, mensajería, pedidos y envíos.</td><td>Ejecución del servicio solicitado y de las Condiciones.</td></tr>
+        <tr><td>Procesar y registrar pagos, comisiones, pedidos y obligaciones relacionadas.</td><td>Ejecución del servicio y, cuando proceda, obligaciones legales.</td></tr>
+        <tr><td>Proteger MyPC, prevenir abusos, investigar incidentes y mantener la fiabilidad.</td><td>Interés legítimo de MyPC en proteger el servicio y a sus usuarios, respetando sus derechos.</td></tr>
+        <tr><td>Enviar notificaciones solicitadas o útiles para la cuenta.</td><td>Ejecución del servicio y configuración/autorización de notificaciones del dispositivo cuando sea necesaria.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>3. Proveedores y destinatarios</h3>
+    <p>Los datos personales no se venden. Cuando sea necesario, pueden ser tratados por:</p>
+    <ul>
+      <li><strong>Google Firebase:</strong> autenticación y notificaciones Firebase Cloud Messaging.</li>
+      <li><strong>Render:</strong> alojamiento de la API de MyPC.</li>
+      <li><strong>Cloudinary:</strong> alojamiento o tratamiento de imágenes enviadas o utilizadas por MyPC.</li>
+      <li><strong>PayPal:</strong> procesamiento de pagos al utilizar las funciones de compra/venta correspondientes.</li>
+      <li><strong>Meilisearch:</strong> indexación y búsqueda de datos del catálogo necesarios para la búsqueda de MyPC.</li>
+      <li><strong>Autoridades o asesores:</strong> cuando lo exija la ley o sea necesario para formular, ejercer o defender reclamaciones.</li>
+    </ul>
+    <p>Algunos proveedores pueden tratar datos desde países fuera del Espacio Económico Europeo. Cuando corresponda, esas transferencias deberán basarse en un mecanismo reconocido por la legislación aplicable y en las garantías del proveedor.</p>
+
+    <h3>4. Visibilidad para otros usuarios</h3>
+    <p>La información que hagas pública o compartas con otros usuarios (por ejemplo seudónimo, avatar, colecciones públicas, anuncios, fotos, mensajes o estado del marketplace) puede ser visible para los destinatarios correspondientes. Evita incluir datos personales innecesarios.</p>
+
+    <h3>5. Conservación</h3>
+    <ul>
+      <li><strong>Cuenta y colección:</strong> mientras se utilice la cuenta y, después, eliminación o anonimización cuando ya no sean necesarias, salvo obligaciones de conservación.</li>
+      <li><strong>Cuentas inactivas:</strong> MyPC puede implementar una supresión o archivo tras un periodo razonable de inactividad, con aviso previo cuando proceda.</li>
+      <li><strong>Pedidos, pagos y justificantes:</strong> durante el tiempo necesario para la transacción, litigios y obligaciones legales. Determinados documentos contables pueden conservarse hasta 10 años.</li>
+      <li><strong>Registros de seguridad:</strong> durante un periodo limitado y proporcional a las necesidades de seguridad, diagnóstico y prevención de abusos.</li>
+    </ul>
+
+    <h3>6. Eliminación de la cuenta</h3>
+    <p>Puedes solicitar la eliminación de tu cuenta y datos asociados mediante el procedimiento de la página <a href="./delete-account.html">Eliminar cuenta</a>. Los datos que deban conservarse por obligación legal, prevención del fraude o defensa de derechos podrán aislarse y conservarse únicamente durante el periodo necesario.</p>
+
+    <h3>7. Tus derechos</h3>
+    <p>Según tu situación y la legislación aplicable, puedes tener derechos de acceso, rectificación, supresión, limitación, oposición y portabilidad. Puedes ejercerlos en <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a>. Cuando sea necesario, podrá solicitarse una verificación razonable de identidad.</p>
+    <p>Las solicitudes se tramitan sin demora indebida y, cuando se aplica el RGPD, normalmente en un plazo máximo de un mes salvo prórroga legal. También puedes presentar una reclamación ante la CNIL.</p>
+
+    <h3>8. Seguridad</h3>
+    <p>MyPC aplica medidas técnicas y organizativas destinadas a reducir accesos no autorizados, pérdidas y alteraciones, incluida autenticación Firebase, controles de acceso de la API y conexiones HTTPS. Ningún sistema ofrece seguridad absoluta.</p>
+
+    <h3>9. Permisos del dispositivo</h3>
+    <p>Según la función utilizada, MyPC puede solicitar acceso a fotos o cámara para añadir/escanear cartas y permiso para enviar notificaciones. Puedes denegarlos o revocarlos desde los ajustes del dispositivo, aunque la función relacionada puede dejar de estar disponible.</p>
+
+    <h3>10. Cookies, publicidad y seguimiento</h3>
+    <p>Esta página jurídica no instala cookies publicitarias ni integra rastreadores publicitarios. MyPC no vende datos personales a anunciantes.</p>
+
+    <h3>11. Menores</h3>
+    <p>Los usuarios deben tener la capacidad jurídica necesaria para utilizar las funciones correspondientes. Cuando la ley o un proveedor de pago exijan autorización parental, deberá obtenerse.</p>
+
+    <h3>12. Cambios</h3>
+    <p>Esta política puede actualizarse para reflejar cambios en MyPC, sus proveedores o las obligaciones legales. La fecha de actualización aparece al principio. Los cambios importantes también podrán notificarse en la aplicación.</p>
+
+    <h3>13. Contacto</h3>
+    <p>Preguntas o solicitudes de privacidad: <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a>.</p>
+  </section>
+
+  <section class="lang-section" data-lang-section="de" lang="de" hidden>
+    <h2>Datenschutzerklärung</h2>
+    <p>Diese Erklärung erläutert, wie <strong>MyPC</strong> personenbezogene Daten verarbeitet, die für den Betrieb der App, der API, der Community-Funktionen und des Marktplatzes erforderlich sind.</p>
+    <p class="notice"><strong>Verantwortlicher:</strong> der Dienst MyPC. Datenschutzkontakt: <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a>.</p>
+
+    <h3>1. Verarbeitete Daten</h3>
+    <ul>
+      <li><strong>Konto und Identität:</strong> Benutzername, E-Mail-Adresse, Firebase-Kennung sowie Vor- und Nachname, sofern angegeben.</li>
+      <li><strong>Kontakt und Versand:</strong> Postanschrift, Stadt, Postleitzahl, Land und für den Versand erforderliche Informationen.</li>
+      <li><strong>Zahlung und Transaktion:</strong> PayPal-Adresse, sofern angegeben, Transaktionskennungen, Beträge, Plattformgebühren, Bestellstatus und Versandoptionen. MyPC speichert keine PayPal-Anmeldedaten.</li>
+      <li><strong>Sammlung und Marktplatz:</strong> besessene oder gespeicherte Karten, Kategorien, Wunschlisten, Angebote, Preise, Fotos, zugehörige Historie und Kartenvorschläge.</li>
+      <li><strong>Soziale Funktionen:</strong> Follows, Likes, Unterhaltungen, Nachrichten und freiwillig übermittelte Anhänge.</li>
+      <li><strong>Benachrichtigungen:</strong> Push-Token und technische Informationen für die Zustellung von Benachrichtigungen.</li>
+      <li><strong>Sicherheit und Betrieb:</strong> Aktivitätsprotokolle, technische Ereignisse und Kennungen zur Missbrauchsprävention und Fehlerdiagnose.</li>
+    </ul>
+
+    <h3>2. Zwecke und Rechtsgrundlagen</h3>
+    <table>
+      <thead><tr><th>Zweck</th><th>Hauptrechtsgrundlage</th></tr></thead>
+      <tbody>
+        <tr><td>Konto erstellen, Nutzer authentifizieren und Sammlungen, Wunschlisten, Angebote, Nachrichten, Bestellungen und Versand bereitstellen.</td><td>Erfüllung des angeforderten Dienstes und dieser Bedingungen.</td></tr>
+        <tr><td>Zahlungen, Gebühren, Bestellungen und damit verbundene Pflichten verarbeiten und dokumentieren.</td><td>Vertragserfüllung und, soweit erforderlich, gesetzliche Verpflichtungen.</td></tr>
+        <tr><td>MyPC schützen, Missbrauch verhindern, Vorfälle untersuchen und Zuverlässigkeit sicherstellen.</td><td>Berechtigtes Interesse von MyPC am Schutz des Dienstes und seiner Nutzer unter Wahrung der Betroffenenrechte.</td></tr>
+        <tr><td>Angeforderte oder für den Kontobetrieb nützliche Benachrichtigungen senden.</td><td>Vertragserfüllung und Geräteeinstellungen/-berechtigung für Benachrichtigungen, soweit erforderlich.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>3. Dienstleister und Empfänger</h3>
+    <p>Personenbezogene Daten werden nicht verkauft. Soweit erforderlich, können sie von folgenden Kategorien von Dienstleistern verarbeitet werden:</p>
+    <ul>
+      <li><strong>Google Firebase:</strong> Authentifizierung und Firebase-Cloud-Messaging-Benachrichtigungen.</li>
+      <li><strong>Render:</strong> Hosting der MyPC-API.</li>
+      <li><strong>Cloudinary:</strong> Hosting oder Verarbeitung von Bildern, die an MyPC übermittelt oder von MyPC genutzt werden.</li>
+      <li><strong>PayPal:</strong> Zahlungsabwicklung bei Nutzung der entsprechenden Kauf-/Verkaufsfunktionen.</li>
+      <li><strong>Meilisearch:</strong> Indexierung und Suche in den für die MyPC-Suche erforderlichen Katalogdaten.</li>
+      <li><strong>Behörden oder Berater:</strong> wenn gesetzlich vorgeschrieben oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich.</li>
+    </ul>
+    <p>Einige Dienstleister können Daten außerhalb des Europäischen Wirtschaftsraums verarbeiten. Soweit zutreffend, müssen solche Übermittlungen auf einem nach geltendem Recht anerkannten Mechanismus und den Garantien des jeweiligen Anbieters beruhen.</p>
+
+    <h3>4. Sichtbarkeit für andere Nutzer</h3>
+    <p>Informationen, die du öffentlich machst oder mit anderen Nutzern teilst (z. B. Benutzername, Avatar, öffentliche Sammlungen, Angebote, Fotos, Nachrichten oder Marktplatzstatus), können für die jeweiligen Empfänger sichtbar sein. Füge keine unnötigen personenbezogenen Daten hinzu.</p>
+
+    <h3>5. Speicherdauer</h3>
+    <ul>
+      <li><strong>Konto- und Sammlungsdaten:</strong> während der Kontonutzung und danach Löschung oder Anonymisierung, sobald sie nicht mehr benötigt werden, vorbehaltlich gesetzlicher Aufbewahrungspflichten.</li>
+      <li><strong>Inaktive Konten:</strong> MyPC kann nach einem angemessenen Zeitraum der Inaktivität eine Löschung oder Archivierung vorsehen und, soweit angemessen, vorab informieren.</li>
+      <li><strong>Bestellungen, Zahlungen und Nachweise:</strong> solange dies für Transaktion, Streitigkeiten und gesetzliche Pflichten erforderlich ist. Bestimmte Buchhaltungsunterlagen können bis zu 10 Jahre aufzubewahren sein.</li>
+      <li><strong>Sicherheitsprotokolle:</strong> für einen begrenzten, zu Sicherheits-, Diagnose- und Missbrauchspräventionszwecken angemessenen Zeitraum.</li>
+    </ul>
+
+    <h3>6. Kontolöschung</h3>
+    <p>Die Löschung deines Kontos und der zugehörigen Daten kann über das Verfahren auf der Seite <a href="./delete-account.html">Konto löschen</a> beantragt werden. Daten, die aufgrund gesetzlicher Pflichten, zur Betrugsprävention oder zur Rechtsverteidigung aufbewahrt werden müssen, können getrennt und nur für den erforderlichen Zeitraum gespeichert werden.</p>
+
+    <h3>7. Deine Rechte</h3>
+    <p>Je nach Situation und anwendbarem Recht können Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch und Datenübertragbarkeit bestehen. Anfragen können an <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a> gerichtet werden. Soweit erforderlich, kann eine angemessene Identitätsprüfung verlangt werden.</p>
+    <p>Anfragen werden unverzüglich bearbeitet und, wenn die DSGVO gilt, grundsätzlich innerhalb eines Monats, sofern keine rechtmäßige Verlängerung greift. Du kannst außerdem Beschwerde bei der CNIL einlegen.</p>
+
+    <h3>8. Sicherheit</h3>
+    <p>MyPC setzt technische und organisatorische Maßnahmen ein, um unbefugten Zugriff, Verlust und Veränderung zu begrenzen, darunter Firebase-Authentifizierung, API-Zugriffskontrollen und HTTPS-Verbindungen. Absolute Sicherheit kann jedoch kein System gewährleisten.</p>
+
+    <h3>9. Geräteberechtigungen</h3>
+    <p>Je nach Funktion kann MyPC Zugriff auf Fotos oder Kamera zum Hinzufügen/Scannen von Karten sowie die Erlaubnis zum Senden von Benachrichtigungen anfordern. Diese Berechtigungen können in den Geräteeinstellungen verweigert oder widerrufen werden; die betreffende Funktion kann dann eingeschränkt sein.</p>
+
+    <h3>10. Cookies, Werbung und Tracking</h3>
+    <p>Diese Rechtsseite setzt keine Werbe-Cookies ein und enthält keine Werbe-Tracker. MyPC verkauft keine personenbezogenen Daten an Werbetreibende.</p>
+
+    <h3>11. Minderjährige</h3>
+    <p>Nutzer müssen die für die jeweiligen Funktionen erforderliche Rechtsfähigkeit besitzen. Soweit das Gesetz oder ein Zahlungsanbieter eine Zustimmung der Erziehungsberechtigten verlangt, muss diese eingeholt werden.</p>
+
+    <h3>12. Änderungen</h3>
+    <p>Diese Erklärung kann aktualisiert werden, um Änderungen an MyPC, seinen Dienstleistern oder rechtlichen Pflichten abzubilden. Das Aktualisierungsdatum steht oben auf der Seite. Wesentliche Änderungen können zusätzlich in der App mitgeteilt werden.</p>
+
+    <h3>13. Kontakt</h3>
+    <p>Fragen oder Datenschutzanfragen: <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a>.</p>
+  </section>
+
+  <footer>MyPC — Ta collection. Ta communauté. / Your collection. Your community.</footer>
+</main>
+<script>
+(function(){
+  const supported=['fr','en','es','de'];
+  const initial=(navigator.language||'fr').slice(0,2).toLowerCase();
+  function setLanguage(lang){
+    if(!supported.includes(lang)) lang='fr';
+    document.documentElement.lang=lang;
+    document.querySelectorAll('[data-lang-section]').forEach(el=>{ el.hidden=el.dataset.langSection!==lang; });
+    document.querySelectorAll('button[data-lang]').forEach(btn=>{ btn.setAttribute('aria-pressed', String(btn.dataset.lang===lang)); });
+  }
+  document.querySelectorAll('button[data-lang]').forEach(btn=>btn.addEventListener('click',()=>setLanguage(btn.dataset.lang)));
+  setLanguage(supported.includes(initial)?initial:'fr');
+})();
+</script>
 </body>
 </html>

@@ -3,237 +3,171 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conditions Générales d’Utilisation / Terms and Conditions de l’application MyPC.">
+  <meta name="description" content="Conditions générales d’utilisation de MyPC : compte, collections, marketplace, paiements, responsabilités et règles d’utilisation.">
   <title>CGU / Terms and Conditions – MyPC</title>
   <style>
-    :root {
-      color-scheme: dark;
-      --bg: #0b0f17;
-      --panel: #121927;
-      --text: #f4f6fb;
-      --muted: #a7b0c0;
-      --gold: #c6b17a;
-      --border: #273247;
-      --link: #7fb3ff;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-    }
-
-    .container {
-      width: min(920px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 32px 0 56px;
-    }
-
-    header {
-      padding: 24px;
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      margin-bottom: 24px;
-    }
-
-    h1, h2, h3 { color: var(--gold); }
-    h1 { margin-top: 0; line-height: 1.2; }
-    h2 { margin-top: 34px; }
-    h3 { margin-top: 24px; }
-
-    p, li { color: var(--text); }
-    .muted { color: var(--muted); }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 18px;
-    }
-
-    a {
-      color: var(--link);
-      text-decoration: none;
-    }
-
-    a:hover { text-decoration: underline; }
-
-    .pill {
-      display: inline-block;
-      padding: 8px 12px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      background: #0d1421;
-    }
-
-    section {
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 24px;
-      margin-bottom: 24px;
-    }
-
-    ul { padding-left: 22px; }
-
-    footer {
-      text-align: center;
-      color: var(--muted);
-      font-size: 14px;
-      padding-top: 8px;
-    }
-
-    @media (max-width: 600px) {
-      .container { width: min(100% - 20px, 920px); padding-top: 16px; }
-      header, section { padding: 18px; border-radius: 14px; }
-    }
+    :root { color-scheme:dark; --bg:#0b0f17; --panel:#121927; --panel2:#0d1421; --text:#f4f6fb; --muted:#a7b0c0; --gold:#c6b17a; --border:#273247; --link:#8bc1ff; }
+    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+    .container{width:min(980px,calc(100% - 32px));margin:0 auto;padding:28px 0 56px} header,section{background:var(--panel);border:1px solid var(--border);border-radius:18px;padding:24px;margin-bottom:22px}
+    h1,h2,h3{color:var(--gold);line-height:1.25} h1{margin:0 0 10px} h2{margin-top:0} h3{margin-top:26px} p,li{color:var(--text)} .muted{color:var(--muted)}
+    a{color:var(--link);text-decoration:none} a:hover,a:focus{text-decoration:underline} nav,.languages{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+    .pill,button.lang{border:1px solid var(--border);border-radius:999px;background:var(--panel2);color:var(--text);padding:9px 13px;font:inherit;cursor:pointer} button.lang[aria-pressed="true"]{border-color:var(--gold);color:var(--gold)}
+    .notice{border-left:4px solid var(--gold);padding:12px 14px;background:var(--panel2);border-radius:10px}.lang-section[hidden]{display:none} footer{text-align:center;color:var(--muted);font-size:14px;padding-top:4px}
+    @media(max-width:700px){.container{width:min(100% - 20px,980px);padding-top:14px}header,section{padding:18px;border-radius:14px}}
   </style>
 </head>
 <body>
-  <main class="container">
-    <header>
-      <h1>MyPC — Conditions Générales d’Utilisation / Terms and Conditions</h1>
-      <p class="muted"><strong>Dernière mise à jour / Last updated:</strong> 11 août 2026 / August 11, 2026</p>
-      <nav aria-label="Navigation juridique">
-        <a class="pill" href="#fr">Français</a>
-        <a class="pill" href="#en">English</a>
-        <a class="pill" href="https://bsketeur.github.io/mypc-privacy-policy/">Politique de confidentialité / Privacy Policy</a>
-        <a class="pill" href="https://bsketeur.github.io/mypc-privacy-policy/delete-account.html">Suppression du compte / Delete account</a>
-        <a class="pill" href="https://my-pc-pi.vercel.app/">Site MyPC</a>
-      </nav>
-    </header>
+<main class="container">
+  <header>
+    <h1>MyPC — Conditions Générales d’Utilisation / Terms and Conditions</h1>
+    <p class="muted"><strong>Dernière mise à jour / Last updated:</strong> 12 août 2026 / August 12, 2026</p>
+    <nav aria-label="Navigation juridique">
+      <a class="pill" href="./index.html">Confidentialité / Privacy</a>
+      <a class="pill" href="./terms.html">CGU / Terms</a>
+      <a class="pill" href="./delete-account.html">Suppression du compte / Delete account</a>
+      <a class="pill" href="https://my-pc-pi.vercel.app/">Site MyPC</a>
+    </nav>
+    <div class="languages" aria-label="Language selector">
+      <button class="lang" data-lang="fr" aria-pressed="true">FR</button><button class="lang" data-lang="en" aria-pressed="false">EN</button><button class="lang" data-lang="es" aria-pressed="false">ES</button><button class="lang" data-lang="de" aria-pressed="false">DE</button>
+    </div>
+  </header>
 
-    <section id="fr" lang="fr">
-      <h2>Conditions Générales d’Utilisation</h2>
+  <section class="lang-section" data-lang-section="fr" lang="fr">
+    <h2>Conditions Générales d’Utilisation</h2>
+    <p>Les présentes Conditions Générales d’Utilisation (« CGU ») régissent l’accès et l’utilisation de <strong>MyPC</strong>, service permettant notamment de gérer des collections de cartes, rechercher des cartes, créer des listes de souhaits, interagir avec d’autres utilisateurs et utiliser des fonctions de marketplace.</p>
+    <p class="notice"><strong>Contact MyPC :</strong> <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a>.</p>
 
-      <h3>1. Objet</h3>
-      <p>Les présentes Conditions Générales d’Utilisation (ci-après les « CGU ») ont pour objet de définir les modalités d’accès et d’utilisation de l’application MyPC (ci-après l’« Application »), permettant aux utilisateurs de collectionner, échanger, vendre et acheter des cartes de sport.</p>
-      <p>L’utilisation de l’Application vaut acceptation pleine et entière des présentes CGU.</p>
+    <h3>1. Acceptation des CGU</h3>
+    <p>La création d’un compte et l’utilisation des fonctionnalités de MyPC impliquent l’acceptation des présentes CGU et de la <a href="./index.html">Politique de confidentialité</a>. Lorsqu’une nouvelle acceptation est requise après une modification importante, MyPC peut demander à l’utilisateur de l’effectuer avant de poursuivre l’utilisation du service.</p>
 
-      <h3>2. Accès au service</h3>
-      <p>L’Application est accessible aux utilisateurs disposant d’un compte valide. L’inscription nécessite la fourniture de certaines informations, notamment :</p>
-      <ul>
-        <li>Nom d’utilisateur</li>
-        <li>Adresse email</li>
-        <li>Adresse postale</li>
-        <li>Adresse PayPal, lorsque nécessaire pour les paiements</li>
-      </ul>
-      <p>L’utilisateur s’engage à fournir des informations exactes et à les maintenir à jour.</p>
+    <h3>2. Compte utilisateur</h3>
+    <p>L’utilisateur s’engage à fournir des informations exactes, à maintenir son compte à jour et à protéger l’accès à son compte. Il ne doit pas usurper l’identité d’un tiers ni contourner les mécanismes d’authentification ou de sécurité.</p>
+    <p>L’utilisateur doit disposer de la capacité juridique nécessaire pour utiliser les fonctionnalités concernées et respecter les conditions des prestataires tiers utilisés, notamment les conditions d’âge ou de compte applicables aux paiements.</p>
 
-      <h3>3. Fonctionnalités de l’Application</h3>
-      <ul>
-        <li><strong>Gestion de collection :</strong> créer, organiser et gérer ses collections de cartes.</li>
-        <li><strong>Échange de cartes :</strong> système d’échange via un chat intégré.</li>
-        <li><strong>Vente de cartes :</strong> vendre ses cartes à d’autres utilisateurs via PayPal.</li>
-        <li><strong>Commission :</strong> 10 % sur chaque vente, prélevée dans le cadre du fonctionnement du service.</li>
-      </ul>
+    <h3>3. Fonctionnalités de MyPC</h3>
+    <ul>
+      <li>gestion de collections, catégories et listes de souhaits ;</li>
+      <li>recherche et consultation du catalogue de cartes ;</li>
+      <li>partage de collections et interactions sociales ;</li>
+      <li>messagerie entre utilisateurs ;</li>
+      <li>publication d’annonces de vente ou d’échange sur la marketplace ;</li>
+      <li>commandes, options de livraison, notifications et autres fonctions proposées dans l’application.</li>
+    </ul>
+    <p>Certaines fonctions peuvent évoluer, être ajoutées, limitées ou retirées afin d’assurer la sécurité, la maintenance ou l’évolution du service.</p>
 
-      <h3>4. Paiements</h3>
-      <p>Tous les paiements sont réalisés via PayPal.</p>
-      <p>Les utilisateurs sont seuls responsables de la validité de leur compte PayPal.</p>
-      <p>Les transactions sont définitives et non remboursables, sauf accord express entre les parties ou disposition légale applicable.</p>
+    <h3>4. Marketplace et annonces</h3>
+    <p>Lorsqu’un utilisateur publie une annonce, il est responsable de l’exactitude de sa description, du prix, de l’état, de l’authenticité, des photos et de sa capacité à vendre ou échanger la carte concernée. Il est également responsable de l’emballage et de l’expédition lorsqu’ils lui incombent.</p>
+    <p>MyPC fournit une plateforme technique de mise en relation. Sauf indication expresse contraire dans une fonctionnalité, MyPC n’est pas propriétaire des cartes proposées par les utilisateurs et n’est pas partie à la vente ou à l’échange conclu entre eux.</p>
+    <p>Les vendeurs agissant à titre professionnel restent seuls responsables du respect des obligations légales qui leur sont applicables, notamment en matière d’information du consommateur, de facturation, de garantie et de droit de rétractation lorsqu’il s’applique.</p>
 
-      <h3>5. Responsabilités de l’utilisateur</h3>
-      <p>L’utilisateur s’engage à :</p>
-      <ul>
-        <li>Ne pas utiliser l’Application à des fins illégales ou contraires aux bonnes mœurs.</li>
-        <li>Respecter les autres utilisateurs et ne pas publier de contenus insultants, menaçants ou illicites.</li>
-        <li>Ne pas utiliser l’Application pour promouvoir abusivement des services tiers.</li>
-      </ul>
-      <p>L’utilisateur est seul responsable des contenus qu’il partage, notamment les images de cartes et les messages.</p>
+    <h3>5. Paiements et frais de plateforme</h3>
+    <p>Les fonctions de paiement disponibles dans MyPC peuvent s’appuyer sur PayPal. L’utilisateur reste soumis aux conditions du prestataire de paiement et doit utiliser un compte valide lorsqu’un paiement est requis.</p>
+    <p><strong>À la date de la présente version, l’API MyPC calcule des frais de plateforme de 5 % du sous-total des articles pour les commandes concernées.</strong> Le montant effectivement applicable doit être affiché ou communiqué avant la validation de la transaction. Toute modification future des frais ne s’appliquera qu’aux transactions concernées après information appropriée.</p>
+    <p>Les remboursements, contestations, rétrofacturations et litiges de paiement sont traités conformément au droit applicable, aux règles du prestataire de paiement et, le cas échéant, aux accords entre les parties.</p>
 
-      <h3>6. Responsabilité liée au service</h3>
-      <p>MyPC met tout en œuvre pour assurer la disponibilité de l’Application, sans garantir une disponibilité permanente.</p>
-      <p>MyPC ne pourra notamment être tenu responsable des interruptions techniques ou de maintenance, des pertes ou litiges entre utilisateurs, ni des contenus publiés par les utilisateurs, dans les limites prévues par la loi applicable.</p>
+    <h3>6. Règles de conduite</h3>
+    <p>Il est interdit d’utiliser MyPC pour :</p>
+    <ul>
+      <li>publier ou transmettre un contenu illégal, frauduleux, menaçant, haineux ou portant atteinte aux droits d’autrui ;</li>
+      <li>escroquer, tromper ou tenter de contourner les mécanismes de paiement, de sécurité ou de modération ;</li>
+      <li>harceler d’autres utilisateurs ou envoyer du spam ;</li>
+      <li>introduire du code malveillant, automatiser abusivement le service, extraire massivement les données ou perturber l’infrastructure ;</li>
+      <li>publier sciemment des annonces trompeuses, des cartes contrefaites ou des contenus dont l’utilisateur ne possède pas les droits nécessaires.</li>
+    </ul>
 
-      <h3>7. Propriété intellectuelle</h3>
-      <p>Les éléments propres à l’Application MyPC, notamment son design, son logo, son nom et son code, sont protégés par les règles applicables en matière de propriété intellectuelle. Toute reproduction ou exploitation non autorisée est interdite.</p>
+    <h3>7. Contenus publiés par les utilisateurs</h3>
+    <p>L’utilisateur conserve les droits qu’il détient sur les contenus qu’il envoie. Il accorde toutefois à MyPC, dans la mesure nécessaire au fonctionnement du service, l’autorisation technique d’héberger, stocker, reproduire, redimensionner, transmettre et afficher ces contenus aux destinataires ou dans les espaces qu’il a choisis.</p>
+    <p>L’utilisateur garantit disposer des droits nécessaires sur les photos et autres contenus qu’il téléverse. MyPC peut retirer ou rendre indisponible un contenu manifestement illicite, contraire aux présentes CGU ou présentant un risque pour le service ou ses utilisateurs.</p>
 
-      <h3>8. Données personnelles</h3>
-      <p>L’Application collecte certaines données personnelles nécessaires au fonctionnement du service. Ces données ne sont pas revendues.</p>
-      <p>Pour plus de détails, consultez la <a href="https://bsketeur.github.io/mypc-privacy-policy/">Politique de confidentialité de MyPC</a>.</p>
+    <h3>8. Propriété intellectuelle de MyPC</h3>
+    <p>Le nom MyPC, son identité visuelle, son interface, son code et les éléments créés spécifiquement pour le service sont protégés selon les règles applicables. Les marques, logos, noms d’équipes, de ligues, de fabricants ou de tiers éventuellement visibles restent la propriété de leurs titulaires respectifs. Leur présence dans un catalogue ne signifie pas qu’ils sponsorisent ou approuvent MyPC.</p>
 
-      <h3>9. Suspension / Suppression de compte</h3>
-      <p>MyPC se réserve le droit de suspendre ou supprimer un compte en cas de non-respect des présentes CGU, dans les limites autorisées par la loi applicable.</p>
-      <p>Les informations relatives à la suppression d’un compte sont disponibles sur la page <a href="https://bsketeur.github.io/mypc-privacy-policy/delete-account.html">Suppression du compte</a>.</p>
+    <h3>9. Disponibilité et évolution du service</h3>
+    <p>MyPC s’efforce d’assurer un service fiable mais ne garantit pas une disponibilité permanente ou sans erreur. Des interruptions peuvent intervenir pour maintenance, mises à jour, incidents, actions de prestataires ou événements hors du contrôle raisonnable de MyPC.</p>
 
-      <h3>10. Modifications</h3>
-      <p>Les présentes CGU peuvent être modifiées. Lorsque cela est nécessaire, les utilisateurs seront informés et pourront être invités à accepter la nouvelle version pour continuer à utiliser l’Application.</p>
+    <h3>10. Responsabilité</h3>
+    <p>Chaque utilisateur reste responsable de son compte, de ses annonces, de ses contenus, de ses échanges et de ses transactions avec d’autres utilisateurs. Dans les limites autorisées par la loi, MyPC n’est pas responsable des déclarations d’un vendeur, de l’état réel d’une carte, d’un défaut d’expédition, d’un litige entre utilisateurs ou d’un incident imputable à un prestataire tiers.</p>
+    <p>Aucune clause des présentes CGU n’exclut une responsabilité qui ne peut légalement être exclue ou limitée.</p>
 
-      <h3>11. Droit applicable</h3>
-      <p>Les présentes CGU sont soumises au droit français, sous réserve des dispositions impératives éventuellement applicables au lieu de résidence de l’utilisateur.</p>
-    </section>
+    <h3>11. Suspension et suppression de compte</h3>
+    <p>MyPC peut limiter, suspendre ou fermer un compte en cas de violation grave ou répétée des CGU, fraude, risque de sécurité, obligation légale ou nécessité de protéger les utilisateurs et le service. Lorsque les circonstances le permettent, une mesure proportionnée est privilégiée.</p>
+    <p>L’utilisateur peut demander la suppression de son compte en suivant la procédure de la page <a href="./delete-account.html">Suppression du compte</a>.</p>
 
-    <section id="en" lang="en">
-      <h2>Terms and Conditions</h2>
+    <h3>12. Données personnelles</h3>
+    <p>Le traitement des données personnelles est décrit dans la <a href="./index.html">Politique de confidentialité de MyPC</a>, qui fait partie du cadre d’utilisation du service.</p>
 
-      <h3>1. Purpose</h3>
-      <p>These Terms and Conditions (the “Terms”) define the conditions of access to and use of the MyPC application (the “Application”), which allows users to collect, exchange, sell and buy sports cards.</p>
-      <p>By using the Application, users agree to these Terms.</p>
+    <h3>13. Modification des CGU</h3>
+    <p>Les CGU peuvent être mises à jour pour refléter une évolution fonctionnelle, tarifaire, technique ou juridique. La date de dernière mise à jour figure en haut. En cas de modification importante, MyPC peut informer les utilisateurs et demander une nouvelle acceptation lorsque cela est nécessaire.</p>
 
-      <h3>2. Access to the service</h3>
-      <p>The Application is available to users with a valid account. Registration may require certain information, including:</p>
-      <ul>
-        <li>Username</li>
-        <li>Email address</li>
-        <li>Mailing address</li>
-        <li>PayPal address when required for payments</li>
-      </ul>
-      <p>Users agree to provide accurate information and keep it up to date.</p>
+    <h3>14. Droit applicable et litiges</h3>
+    <p>Les présentes CGU sont soumises au droit français, sous réserve des règles impératives plus protectrices qui pourraient s’appliquer au lieu de résidence de l’utilisateur. Avant toute procédure, les parties sont invitées à rechercher une solution amiable lorsque cela est possible.</p>
+  </section>
 
-      <h3>3. Application features</h3>
-      <ul>
-        <li><strong>Collection management:</strong> create, organize and manage card collections.</li>
-        <li><strong>Card exchange:</strong> exchange system through an integrated chat.</li>
-        <li><strong>Card sales:</strong> sell cards to other users through PayPal.</li>
-        <li><strong>Commission:</strong> a 10% commission on each sale as part of the operation of the service.</li>
-      </ul>
+  <section class="lang-section" data-lang-section="en" lang="en" hidden>
+    <h2>Terms and Conditions</h2>
+    <p>These Terms and Conditions (“Terms”) govern access to and use of <strong>MyPC</strong>, a service that notably lets users manage card collections, search cards, create wishlists, interact with other users and use marketplace features.</p>
+    <p class="notice"><strong>MyPC contact:</strong> <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a>.</p>
 
-      <h3>4. Payments</h3>
-      <p>Payments are processed through PayPal.</p>
-      <p>Users are solely responsible for the validity of their PayPal account.</p>
-      <p>Transactions are final and non-refundable unless the parties expressly agree otherwise or applicable law provides otherwise.</p>
+    <h3>1. Acceptance</h3><p>Creating an account and using MyPC means accepting these Terms and the <a href="./index.html">Privacy Policy</a>. Where material changes require renewed acceptance, MyPC may ask users to accept the updated version before continuing to use the service.</p>
+    <h3>2. User account</h3><p>Users must provide accurate information, keep their account information current and protect account access. Users may not impersonate others or bypass authentication or security mechanisms.</p><p>Users must have the legal capacity required for the relevant features and comply with third-party provider requirements, including any age or account requirements that apply to payments.</p>
+    <h3>3. MyPC features</h3><ul><li>collections, categories and wishlists;</li><li>catalog search and card browsing;</li><li>shared collections and social interactions;</li><li>user-to-user messaging;</li><li>sale or trade listings on the marketplace;</li><li>orders, shipping options, notifications and other in-app features.</li></ul><p>Features may evolve, be added, limited or removed for security, maintenance or service-development reasons.</p>
+    <h3>4. Marketplace and listings</h3><p>Users who publish listings are responsible for the accuracy of descriptions, price, condition, authenticity, photos and their right to sell or trade the relevant card. They are also responsible for packaging and shipment where applicable.</p><p>MyPC provides a technical platform connecting users. Unless a feature expressly states otherwise, MyPC does not own user-listed cards and is not a party to sales or trades concluded between users.</p><p>Professional sellers remain solely responsible for legal duties that apply to them, including consumer information, invoicing, warranties and withdrawal rights where applicable.</p>
+    <h3>5. Payments and platform fees</h3><p>Payment features available in MyPC may rely on PayPal. Users remain subject to the payment provider’s terms and must use a valid account where payment is required.</p><p><strong>As of this version, the MyPC API calculates a 5% platform fee on the item subtotal for applicable orders.</strong> The amount actually applicable must be displayed or communicated before the transaction is confirmed. Future fee changes will apply only to relevant later transactions after appropriate notice.</p><p>Refunds, disputes, chargebacks and payment issues are handled under applicable law, the payment provider’s rules and, where relevant, agreements between the parties.</p>
+    <h3>6. Conduct</h3><p>Users may not use MyPC to:</p><ul><li>publish or transmit illegal, fraudulent, threatening, hateful or rights-infringing content;</li><li>scam, mislead or attempt to bypass payment, security or moderation systems;</li><li>harass other users or send spam;</li><li>introduce malware, abusively automate the service, scrape data at scale or disrupt infrastructure;</li><li>knowingly list misleading or counterfeit cards or content they do not have the right to use.</li></ul>
+    <h3>7. User content</h3><p>Users retain the rights they hold in content they submit. To the extent required to operate the service, users grant MyPC the technical permission to host, store, reproduce, resize, transmit and display that content to the recipients or spaces selected by the user.</p><p>Users must hold the necessary rights to uploaded photos and other content. MyPC may remove or disable content that is manifestly unlawful, breaches these Terms or creates a risk for the service or its users.</p>
+    <h3>8. MyPC intellectual property</h3><p>The MyPC name, visual identity, interface, code and elements created specifically for the service are protected under applicable rules. Third-party brands, logos, team names, leagues or manufacturers remain the property of their respective owners. Their appearance in a catalog does not imply sponsorship or endorsement of MyPC.</p>
+    <h3>9. Availability and changes</h3><p>MyPC aims to provide a reliable service but does not guarantee uninterrupted or error-free availability. Interruptions may occur for maintenance, updates, incidents, provider actions or events outside MyPC’s reasonable control.</p>
+    <h3>10. Liability</h3><p>Each user remains responsible for their account, listings, content, trades and transactions with other users. To the extent permitted by law, MyPC is not responsible for seller statements, actual card condition, shipment failures, disputes between users or incidents attributable to third-party providers.</p><p>Nothing in these Terms excludes liability that cannot lawfully be excluded or limited.</p>
+    <h3>11. Suspension and deletion</h3><p>MyPC may restrict, suspend or close an account in cases of serious or repeated Terms violations, fraud, security risk, legal obligation or a need to protect users and the service. Where circumstances allow, proportionate action is preferred.</p><p>Users may request account deletion using the <a href="./delete-account.html">Delete account</a> page.</p>
+    <h3>12. Personal data</h3><p>Personal data processing is described in the <a href="./index.html">MyPC Privacy Policy</a>.</p>
+    <h3>13. Changes to these Terms</h3><p>These Terms may be updated to reflect functional, pricing, technical or legal changes. The last-updated date appears above. For material changes, MyPC may notify users and request renewed acceptance when needed.</p>
+    <h3>14. Governing law and disputes</h3><p>These Terms are governed by French law, subject to any mandatory more protective rules that apply in the user’s place of residence. Before legal proceedings, the parties are encouraged to seek an amicable solution where possible.</p>
+  </section>
 
-      <h3>5. User responsibilities</h3>
-      <p>Users agree to:</p>
-      <ul>
-        <li>Not use the Application for illegal purposes or purposes contrary to public order.</li>
-        <li>Respect other users and not publish insulting, threatening or unlawful content.</li>
-        <li>Not use the Application to abusively promote third-party services.</li>
-      </ul>
-      <p>Users are solely responsible for the content they share, including card images and messages.</p>
+  <section class="lang-section" data-lang-section="es" lang="es" hidden>
+    <h2>Condiciones de uso</h2>
+    <p>Estas Condiciones regulan el acceso y uso de <strong>MyPC</strong>, servicio que permite, entre otras funciones, gestionar colecciones de cartas, buscar cartas, crear listas de deseos, interactuar con otros usuarios y utilizar un marketplace.</p>
+    <p class="notice"><strong>Contacto MyPC:</strong> <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a>.</p>
+    <h3>1. Aceptación</h3><p>Crear una cuenta y utilizar MyPC supone aceptar estas Condiciones y la <a href="./index.html">Política de privacidad</a>. Cuando un cambio importante requiera una nueva aceptación, MyPC podrá solicitarla antes de continuar usando el servicio.</p>
+    <h3>2. Cuenta de usuario</h3><p>El usuario debe facilitar información exacta, mantenerla actualizada y proteger el acceso a su cuenta. No podrá suplantar a terceros ni eludir mecanismos de autenticación o seguridad.</p><p>Debe contar con la capacidad jurídica necesaria y cumplir las condiciones de proveedores externos, incluidos los requisitos de edad o cuenta aplicables a pagos.</p>
+    <h3>3. Funciones de MyPC</h3><ul><li>colecciones, categorías y listas de deseos;</li><li>búsqueda y consulta del catálogo;</li><li>colecciones compartidas e interacciones sociales;</li><li>mensajería entre usuarios;</li><li>anuncios de venta o intercambio;</li><li>pedidos, opciones de envío, notificaciones y otras funciones de la app.</li></ul><p>Las funciones pueden evolucionar, añadirse, limitarse o retirarse por seguridad, mantenimiento o evolución del servicio.</p>
+    <h3>4. Marketplace y anuncios</h3><p>Quien publique un anuncio es responsable de la exactitud de la descripción, precio, estado, autenticidad, fotos y de su derecho a vender o intercambiar la carta. También es responsable del embalaje y envío cuando corresponda.</p><p>MyPC proporciona una plataforma técnica de conexión entre usuarios. Salvo indicación expresa, MyPC no es propietario de las cartas anunciadas ni parte en las ventas o intercambios celebrados entre usuarios.</p><p>Los vendedores profesionales son responsables de cumplir las obligaciones legales aplicables, incluidas información al consumidor, facturación, garantías y derecho de desistimiento cuando proceda.</p>
+    <h3>5. Pagos y comisiones</h3><p>Las funciones de pago pueden apoyarse en PayPal. Los usuarios siguen sujetos a las condiciones del proveedor de pagos y deben disponer de una cuenta válida cuando sea necesaria.</p><p><strong>En esta versión, la API de MyPC calcula una comisión de plataforma del 5 % sobre el subtotal de los artículos en los pedidos correspondientes.</strong> El importe aplicable debe mostrarse o comunicarse antes de confirmar la transacción. Los cambios futuros solo se aplicarán a transacciones posteriores tras la información adecuada.</p><p>Reembolsos, disputas y contracargos se gestionan conforme a la legislación aplicable, las normas del proveedor de pagos y, cuando proceda, los acuerdos entre las partes.</p>
+    <h3>6. Conducta</h3><p>No se permite utilizar MyPC para contenido ilegal, fraude, acoso, spam, malware, automatización abusiva, extracción masiva de datos, perturbación de la infraestructura, anuncios engañosos, cartas falsificadas o contenidos sobre los que el usuario no tenga derechos.</p>
+    <h3>7. Contenido del usuario</h3><p>El usuario conserva los derechos que posea sobre su contenido y concede a MyPC, solo en la medida necesaria para prestar el servicio, permiso técnico para alojarlo, almacenarlo, reproducirlo, redimensionarlo, transmitirlo y mostrarlo a los destinatarios o espacios elegidos.</p><p>MyPC podrá retirar contenido manifiestamente ilícito, contrario a estas Condiciones o que genere un riesgo para el servicio o sus usuarios.</p>
+    <h3>8. Propiedad intelectual</h3><p>El nombre MyPC, identidad visual, interfaz, código y elementos creados específicamente para el servicio están protegidos. Las marcas, logos, equipos, ligas o fabricantes de terceros pertenecen a sus titulares. Su presencia en el catálogo no implica patrocinio ni aprobación de MyPC.</p>
+    <h3>9. Disponibilidad</h3><p>MyPC procura prestar un servicio fiable, pero no garantiza disponibilidad permanente ni ausencia de errores. Puede haber interrupciones por mantenimiento, actualizaciones, incidentes, proveedores o causas fuera de su control razonable.</p>
+    <h3>10. Responsabilidad</h3><p>Cada usuario es responsable de su cuenta, anuncios, contenidos, intercambios y transacciones. Dentro de los límites legales, MyPC no responde de declaraciones de vendedores, estado real de las cartas, fallos de envío, disputas entre usuarios o incidentes atribuibles a proveedores externos.</p><p>Nada de estas Condiciones excluye responsabilidades que legalmente no puedan excluirse o limitarse.</p>
+    <h3>11. Suspensión y eliminación</h3><p>MyPC puede restringir, suspender o cerrar una cuenta ante incumplimientos graves o reiterados, fraude, riesgo de seguridad, obligación legal o necesidad de proteger a usuarios y servicio. Cuando sea posible se aplicará una medida proporcional.</p><p>La eliminación de la cuenta puede solicitarse desde <a href="./delete-account.html">Eliminar cuenta</a>.</p>
+    <h3>12. Datos personales</h3><p>El tratamiento de datos se describe en la <a href="./index.html">Política de privacidad de MyPC</a>.</p>
+    <h3>13. Modificaciones</h3><p>Estas Condiciones pueden actualizarse por cambios funcionales, tarifarios, técnicos o legales. La fecha aparece al inicio. Los cambios importantes podrán notificarse y requerir una nueva aceptación.</p>
+    <h3>14. Ley aplicable y litigios</h3><p>Estas Condiciones se rigen por el derecho francés, sin perjuicio de las normas imperativas más protectoras aplicables en el lugar de residencia del usuario. Siempre que sea posible, las partes intentarán primero una solución amistosa.</p>
+  </section>
 
-      <h3>6. Service responsibility</h3>
-      <p>MyPC makes reasonable efforts to keep the Application available but does not guarantee uninterrupted availability.</p>
-      <p>To the extent permitted by applicable law, MyPC cannot be held responsible for technical or maintenance interruptions, losses or disputes between users, or content published by users.</p>
+  <section class="lang-section" data-lang-section="de" lang="de" hidden>
+    <h2>Nutzungsbedingungen</h2>
+    <p>Diese Bedingungen regeln den Zugang zu und die Nutzung von <strong>MyPC</strong>, einem Dienst zum Verwalten von Kartensammlungen, zur Kartensuche, für Wunschlisten, Nutzerinteraktionen und Marktplatzfunktionen.</p>
+    <p class="notice"><strong>MyPC-Kontakt:</strong> <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a>.</p>
+    <h3>1. Zustimmung</h3><p>Mit Kontoerstellung und Nutzung von MyPC werden diese Bedingungen und die <a href="./index.html">Datenschutzerklärung</a> akzeptiert. Bei wesentlichen Änderungen kann MyPC eine erneute Zustimmung verlangen.</p>
+    <h3>2. Benutzerkonto</h3><p>Nutzer müssen richtige Angaben machen, diese aktuell halten und den Kontozugang schützen. Identitätstäuschung sowie Umgehung von Authentifizierungs- oder Sicherheitsmechanismen sind untersagt.</p><p>Nutzer müssen die erforderliche Rechtsfähigkeit besitzen und die Bedingungen von Drittanbietern einhalten, einschließlich Alters- oder Kontovorgaben für Zahlungen.</p>
+    <h3>3. MyPC-Funktionen</h3><ul><li>Sammlungen, Kategorien und Wunschlisten;</li><li>Katalogsuche und Kartenansicht;</li><li>geteilte Sammlungen und soziale Interaktionen;</li><li>Nachrichten zwischen Nutzern;</li><li>Verkaufs- oder Tauschangebote auf dem Marktplatz;</li><li>Bestellungen, Versandoptionen, Benachrichtigungen und weitere App-Funktionen.</li></ul><p>Funktionen können aus Sicherheits-, Wartungs- oder Entwicklungsgründen geändert, ergänzt, eingeschränkt oder entfernt werden.</p>
+    <h3>4. Marktplatz und Angebote</h3><p>Wer ein Angebot veröffentlicht, ist für Beschreibung, Preis, Zustand, Echtheit, Fotos und die Berechtigung zum Verkauf oder Tausch verantwortlich sowie gegebenenfalls für Verpackung und Versand.</p><p>MyPC stellt eine technische Plattform zur Vernetzung bereit. Soweit nicht ausdrücklich anders angegeben, besitzt MyPC die angebotenen Karten nicht und ist nicht Partei des Verkaufs oder Tauschs zwischen Nutzern.</p><p>Gewerbliche Verkäufer sind selbst für die Einhaltung ihrer gesetzlichen Pflichten verantwortlich, insbesondere Verbraucherinformation, Rechnungsstellung, Gewährleistung und Widerrufsrechte, soweit anwendbar.</p>
+    <h3>5. Zahlungen und Plattformgebühren</h3><p>Zahlungsfunktionen können PayPal nutzen. Nutzer unterliegen den Bedingungen des Zahlungsdienstleisters und benötigen ein gültiges Konto, wenn eine Zahlung erforderlich ist.</p><p><strong>In dieser Version berechnet die MyPC-API für betreffende Bestellungen eine Plattformgebühr von 5 % des Artikel-Zwischensummens.</strong> Der tatsächlich anwendbare Betrag muss vor Bestätigung der Transaktion angezeigt oder mitgeteilt werden. Künftige Gebührenänderungen gelten erst für spätere Transaktionen nach angemessener Information.</p><p>Erstattungen, Zahlungsstreitigkeiten und Rückbuchungen richten sich nach geltendem Recht, den Regeln des Zahlungsdienstleisters und gegebenenfalls Vereinbarungen zwischen den Parteien.</p>
+    <h3>6. Verhaltensregeln</h3><p>Untersagt sind insbesondere illegale Inhalte, Betrug, Belästigung, Spam, Schadsoftware, missbräuchliche Automatisierung, massenhaftes Datenscraping, Störung der Infrastruktur, irreführende Angebote, gefälschte Karten sowie Inhalte ohne erforderliche Rechte.</p>
+    <h3>7. Nutzerinhalte</h3><p>Nutzer behalten ihre Rechte an eingereichten Inhalten und erteilen MyPC nur soweit für den Dienst erforderlich die technische Erlaubnis, Inhalte zu hosten, speichern, vervielfältigen, skalieren, übertragen und in den gewählten Bereichen anzuzeigen.</p><p>MyPC kann offensichtlich rechtswidrige, gegen diese Bedingungen verstoßende oder riskante Inhalte entfernen oder sperren.</p>
+    <h3>8. Geistiges Eigentum</h3><p>Name, visuelle Identität, Oberfläche, Code und speziell für MyPC geschaffene Elemente sind geschützt. Marken, Logos, Teams, Ligen und Hersteller Dritter gehören ihren jeweiligen Rechteinhabern. Eine Katalogdarstellung bedeutet keine Unterstützung oder Partnerschaft.</p>
+    <h3>9. Verfügbarkeit</h3><p>MyPC bemüht sich um Zuverlässigkeit, garantiert jedoch keine permanente oder fehlerfreie Verfügbarkeit. Unterbrechungen können durch Wartung, Updates, Vorfälle, Anbieter oder Ereignisse außerhalb der zumutbaren Kontrolle entstehen.</p>
+    <h3>10. Haftung</h3><p>Nutzer sind für Konto, Angebote, Inhalte, Tauschgeschäfte und Transaktionen verantwortlich. Soweit gesetzlich zulässig, haftet MyPC nicht für Verkäuferangaben, tatsächlichen Kartenzustand, Versandfehler, Nutzerstreitigkeiten oder Vorfälle bei Drittanbietern.</p><p>Unabdingbare gesetzliche Haftung wird durch diese Bedingungen nicht ausgeschlossen.</p>
+    <h3>11. Sperrung und Löschung</h3><p>MyPC kann Konten bei schweren oder wiederholten Verstößen, Betrug, Sicherheitsrisiken, gesetzlichen Pflichten oder zum Schutz von Nutzern und Dienst einschränken, sperren oder schließen. Soweit möglich, wird eine verhältnismäßige Maßnahme gewählt.</p><p>Eine Kontolöschung kann über <a href="./delete-account.html">Konto löschen</a> beantragt werden.</p>
+    <h3>12. Personenbezogene Daten</h3><p>Die Datenverarbeitung ist in der <a href="./index.html">MyPC-Datenschutzerklärung</a> beschrieben.</p>
+    <h3>13. Änderungen</h3><p>Diese Bedingungen können aufgrund funktionaler, preislicher, technischer oder rechtlicher Änderungen aktualisiert werden. Das Datum steht oben. Wesentliche Änderungen können mitgeteilt werden und eine erneute Zustimmung erfordern.</p>
+    <h3>14. Anwendbares Recht und Streitigkeiten</h3><p>Es gilt französisches Recht, vorbehaltlich zwingender, für Nutzer günstigerer Vorschriften am Wohnort. Soweit möglich, soll vor einem Verfahren eine einvernehmliche Lösung gesucht werden.</p>
+  </section>
 
-      <h3>7. Intellectual property</h3>
-      <p>Elements specific to the MyPC Application, including its design, logo, name and code, are protected by applicable intellectual property rules. Unauthorized reproduction or exploitation is prohibited.</p>
-
-      <h3>8. Personal data</h3>
-      <p>The Application collects certain personal data required to operate the service. This data is not sold.</p>
-      <p>For more information, please read the <a href="https://bsketeur.github.io/mypc-privacy-policy/">MyPC Privacy Policy</a>.</p>
-
-      <h3>9. Account suspension / deletion</h3>
-      <p>MyPC reserves the right to suspend or delete an account in the event of a breach of these Terms, within the limits permitted by applicable law.</p>
-      <p>Information about deleting an account is available on the <a href="https://bsketeur.github.io/mypc-privacy-policy/delete-account.html">Delete account</a> page.</p>
-
-      <h3>10. Changes</h3>
-      <p>These Terms may be updated. Where required, users will be informed and may be asked to accept the new version in order to continue using the Application.</p>
-
-      <h3>11. Applicable law</h3>
-      <p>These Terms are governed by French law, subject to any mandatory legal provisions that may apply in the user’s place of residence.</p>
-    </section>
-
-    <footer>
-      MyPC — Ta collection. Ta communauté. / Your collection. Your community.
-    </footer>
-  </main>
+  <footer>MyPC — Ta collection. Ta communauté. / Your collection. Your community.</footer>
+</main>
+<script>
+(function(){const supported=['fr','en','es','de'];const initial=(navigator.language||'fr').slice(0,2).toLowerCase();function setLanguage(lang){if(!supported.includes(lang))lang='fr';document.documentElement.lang=lang;document.querySelectorAll('[data-lang-section]').forEach(el=>el.hidden=el.dataset.langSection!==lang);document.querySelectorAll('button[data-lang]').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.lang===lang)));}document.querySelectorAll('button[data-lang]').forEach(btn=>btn.addEventListener('click',()=>setLanguage(btn.dataset.lang)));setLanguage(supported.includes(initial)?initial:'fr');})();
+</script>
 </body>
 </html>
-

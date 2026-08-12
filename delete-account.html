@@ -2,43 +2,105 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Suppression de compte – MyPC</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Demander la suppression d’un compte MyPC et des données associées.">
+  <title>Suppression du compte / Delete account – MyPC</title>
   <style>
-    body {
-      font-family: sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-      background-color: #111;
-      color: #eee;
-    }
-    h1 {
-      color: #C6B17A;
-    }
-    p {
-      line-height: 1.6;
-    }
-    a {
-      color: #C6B17A;
-      text-decoration: underline;
-    }
+    :root { color-scheme:dark; --bg:#0b0f17; --panel:#121927; --panel2:#0d1421; --text:#f4f6fb; --muted:#a7b0c0; --gold:#c6b17a; --border:#273247; --link:#8bc1ff; }
+    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}.container{width:min(900px,calc(100% - 32px));margin:0 auto;padding:28px 0 56px}
+    header,section{background:var(--panel);border:1px solid var(--border);border-radius:18px;padding:24px;margin-bottom:22px}h1,h2,h3{color:var(--gold);line-height:1.25}h1{margin:0 0 10px}h2{margin-top:0}h3{margin-top:26px}p,li{color:var(--text)}.muted{color:var(--muted)}
+    a{color:var(--link);text-decoration:none}a:hover,a:focus{text-decoration:underline}nav,.languages{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.pill,button.lang{border:1px solid var(--border);border-radius:999px;background:var(--panel2);color:var(--text);padding:9px 13px;font:inherit;cursor:pointer}button.lang[aria-pressed="true"]{border-color:var(--gold);color:var(--gold)}
+    .cta{display:inline-block;background:var(--gold);color:#111!important;font-weight:700;border-radius:12px;padding:12px 16px;margin:8px 0 12px;text-decoration:none!important}.notice{border-left:4px solid var(--gold);padding:12px 14px;background:var(--panel2);border-radius:10px}.lang-section[hidden]{display:none}footer{text-align:center;color:var(--muted);font-size:14px;padding-top:4px}
+    @media(max-width:700px){.container{width:min(100% - 20px,900px);padding-top:14px}header,section{padding:18px;border-radius:14px}}
   </style>
 </head>
 <body>
-  <h1>Suppression de compte</h1>
-  <p>Si vous souhaitez supprimer votre compte et toutes les données associées à l’application <strong>MyPC</strong>, vous pouvez nous contacter directement.</p>
+<main class="container">
+  <header>
+    <h1>MyPC — Suppression du compte / Delete account</h1>
+    <p class="muted"><strong>Dernière mise à jour / Last updated:</strong> 12 août 2026 / August 12, 2026</p>
+    <nav aria-label="Navigation juridique">
+      <a class="pill" href="./index.html">Confidentialité / Privacy</a><a class="pill" href="./terms.html">CGU / Terms</a><a class="pill" href="./delete-account.html">Suppression du compte / Delete account</a><a class="pill" href="https://my-pc-pi.vercel.app/">Site MyPC</a>
+    </nav>
+    <div class="languages" aria-label="Language selector"><button class="lang" data-lang="fr" aria-pressed="true">FR</button><button class="lang" data-lang="en" aria-pressed="false">EN</button><button class="lang" data-lang="es" aria-pressed="false">ES</button><button class="lang" data-lang="de" aria-pressed="false">DE</button></div>
+  </header>
 
-  <p>Envoyez une demande par email à l’adresse suivante :</p>
-  <p><strong><a href="mailto:bernard.francois12@gmail.com">mypc.appoff@gmail.com</a></strong></p>
+  <section class="lang-section" data-lang-section="fr" lang="fr">
+    <h2>Demander la suppression de votre compte MyPC</h2>
+    <p>Vous pouvez demander la suppression de votre compte MyPC et des données personnelles qui lui sont associées en envoyant un e-mail depuis l’adresse liée à votre compte.</p>
+    <a class="cta" href="mailto:mypc.appoff@gmail.com?subject=Suppression%20de%20mon%20compte%20MyPC&body=Bonjour%2C%0A%0AJe%20souhaite%20demander%20la%20suppression%20de%20mon%20compte%20MyPC.%0A%0APseudonyme%20MyPC%20%3A%20%0AAdresse%20e-mail%20du%20compte%20%3A%20%0A%0AMerci.">Envoyer ma demande de suppression</a>
+    <p>Adresse : <strong><a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a></strong></p>
 
-  <p>Nous traiterons votre demande dans un délai de 7 jours ouvrés. La suppression inclura :</p>
-  <ul>
-    <li>Votre profil utilisateur</li>
-    <li>Vos messages et contenus partagés</li>
-    <li>Vos informations de transaction</li>
-  </ul>
+    <h3>1. Informations à indiquer</h3>
+    <ul><li>votre pseudonyme MyPC ;</li><li>l’adresse e-mail associée au compte ;</li><li>la mention explicite que vous souhaitez supprimer votre compte MyPC.</li></ul>
+    <p>Pour protéger votre compte, MyPC peut demander une vérification raisonnable permettant de confirmer que la demande provient bien du titulaire du compte. Ne transmettez jamais votre mot de passe.</p>
 
-  <p>Pour toute question complémentaire, n’hésitez pas à nous écrire.</p>
+    <h3>2. Données concernées</h3>
+    <p>Une demande validée vise la suppression ou l’anonymisation des données associées au compte qui ne sont plus nécessaires, notamment le profil, les collections et listes personnelles, les annonces actives, les liens sociaux, les jetons de notification et les contenus associés lorsque leur conservation n’est plus nécessaire.</p>
+    <p>Lorsque des messages ou contenus ont été partagés avec d’autres utilisateurs, certaines copies strictement nécessaires à l’intégrité d’une conversation ou à la preuve d’une transaction peuvent devoir être anonymisées plutôt que supprimées immédiatement.</p>
+
+    <h3>3. Données pouvant être conservées</h3>
+    <p class="notice">Certaines informations peuvent être conservées séparément après la suppression du compte lorsqu’une obligation légale, la prévention de la fraude, un litige, une transaction en cours ou la défense de droits le justifie. Les pièces comptables concernées peuvent, lorsqu’une obligation comptable s’applique, être conservées jusqu’à 10 ans.</p>
+
+    <h3>4. Délai</h3>
+    <p>MyPC traite les demandes dans les meilleurs délais. Lorsque le RGPD s’applique, une réponse est apportée en principe dans un délai maximal d’un mois à compter de la réception de la demande, sauf prolongation autorisée en raison de la complexité ou du nombre de demandes.</p>
+
+    <h3>5. Commandes ou transactions en cours</h3>
+    <p>Si une commande, un paiement, un remboursement, un litige ou une expédition est encore en cours, MyPC peut conserver temporairement les données strictement nécessaires jusqu’à la clôture de cette opération, puis appliquer la suppression ou l’archivage légal requis.</p>
+
+    <h3>6. Suppression chez les prestataires</h3>
+    <p>Lorsque des données liées au compte ont été traitées par des prestataires nécessaires au service, MyPC prend les mesures raisonnablement nécessaires pour supprimer ou faire supprimer les données concernées, sous réserve des obligations propres de conservation de ces prestataires.</p>
+
+    <h3>7. Questions et droits</h3>
+    <p>Pour toute question : <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a>. Consultez également la <a href="./index.html">Politique de confidentialité</a>.</p>
+  </section>
+
+  <section class="lang-section" data-lang-section="en" lang="en" hidden>
+    <h2>Request deletion of your MyPC account</h2>
+    <p>You can request deletion of your MyPC account and associated personal data by emailing us from the address linked to your account.</p>
+    <a class="cta" href="mailto:mypc.appoff@gmail.com?subject=Delete%20my%20MyPC%20account&body=Hello%2C%0A%0AI%20would%20like%20to%20request%20deletion%20of%20my%20MyPC%20account.%0A%0AMyPC%20username%3A%20%0AAccount%20email%3A%20%0A%0AThank%20you.">Send my deletion request</a>
+    <p>Address: <strong><a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a></strong></p>
+    <h3>1. Information to include</h3><ul><li>your MyPC username;</li><li>the email address linked to the account;</li><li>a clear statement that you want your MyPC account deleted.</li></ul><p>To protect your account, MyPC may request reasonable verification that the request comes from the account holder. Never send your password.</p>
+    <h3>2. Data covered</h3><p>A validated request aims to delete or anonymize account-linked data that is no longer needed, including profile information, personal collections and lists, active listings, social links, notification tokens and related content where retention is no longer necessary.</p><p>Where messages or content have been shared with other users, some copies strictly required to preserve conversation integrity or transaction evidence may need to be anonymized rather than immediately deleted.</p>
+    <h3>3. Data that may be retained</h3><p class="notice">Certain information may be retained separately after account deletion where required by law, fraud prevention, a dispute, an ongoing transaction or the establishment, exercise or defence of legal claims. Where accounting obligations apply, relevant accounting records may need to be retained for up to 10 years.</p>
+    <h3>4. Timeframe</h3><p>MyPC handles requests without undue delay. Where the GDPR applies, a response is generally provided within one month of receipt, subject to any lawful extension due to complexity or number of requests.</p>
+    <h3>5. Pending orders or transactions</h3><p>If an order, payment, refund, dispute or shipment is still pending, MyPC may temporarily retain only the data needed to close that operation, then apply the required deletion or legal archiving.</p>
+    <h3>6. Service providers</h3><p>Where account data has been processed by providers necessary to the service, MyPC takes reasonably necessary steps to delete or request deletion of the relevant data, subject to each provider’s own lawful retention duties.</p>
+    <h3>7. Questions and rights</h3><p>Questions: <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a>. See also the <a href="./index.html">Privacy Policy</a>.</p>
+  </section>
+
+  <section class="lang-section" data-lang-section="es" lang="es" hidden>
+    <h2>Solicitar la eliminación de tu cuenta MyPC</h2>
+    <p>Puedes solicitar la eliminación de tu cuenta MyPC y de los datos personales asociados enviando un correo desde la dirección vinculada a tu cuenta.</p>
+    <a class="cta" href="mailto:mypc.appoff@gmail.com?subject=Eliminar%20mi%20cuenta%20MyPC&body=Hola%2C%0A%0AQuiero%20solicitar%20la%20eliminaci%C3%B3n%20de%20mi%20cuenta%20MyPC.%0A%0AUsuario%20MyPC%3A%20%0ACorreo%20de%20la%20cuenta%3A%20%0A%0AGracias.">Enviar mi solicitud de eliminación</a>
+    <p>Dirección: <strong><a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a></strong></p>
+    <h3>1. Información a indicar</h3><ul><li>tu seudónimo MyPC;</li><li>el correo asociado a la cuenta;</li><li>una indicación clara de que quieres eliminar tu cuenta MyPC.</li></ul><p>Para proteger la cuenta, MyPC puede solicitar una verificación razonable de identidad. No envíes nunca tu contraseña.</p>
+    <h3>2. Datos afectados</h3><p>Una solicitud validada tiene como objetivo eliminar o anonimizar los datos vinculados a la cuenta que ya no sean necesarios, incluidos perfil, colecciones y listas personales, anuncios activos, vínculos sociales, tokens de notificación y contenidos relacionados cuando ya no sea necesario conservarlos.</p><p>Si mensajes o contenidos se compartieron con otros usuarios, algunas copias estrictamente necesarias para mantener la integridad de una conversación o como prueba de una transacción pueden anonimizarse en lugar de eliminarse inmediatamente.</p>
+    <h3>3. Datos que pueden conservarse</h3><p class="notice">Cierta información puede conservarse de forma separada tras eliminar la cuenta cuando lo exija la ley, la prevención del fraude, un litigio, una transacción en curso o la defensa de derechos. Cuando existan obligaciones contables, determinados justificantes pueden conservarse hasta 10 años.</p>
+    <h3>4. Plazo</h3><p>MyPC tramita las solicitudes sin demora indebida. Cuando se aplica el RGPD, normalmente se responde en un plazo máximo de un mes desde la recepción, salvo prórroga legal por complejidad o número de solicitudes.</p>
+    <h3>5. Pedidos o transacciones en curso</h3><p>Si hay un pedido, pago, reembolso, disputa o envío pendiente, MyPC puede conservar temporalmente solo los datos necesarios hasta cerrar la operación y después aplicar la eliminación o archivo legal correspondiente.</p>
+    <h3>6. Proveedores</h3><p>Cuando proveedores necesarios para el servicio hayan tratado datos de la cuenta, MyPC adopta las medidas razonablemente necesarias para eliminarlos o solicitar su eliminación, sin perjuicio de las obligaciones legales de conservación del proveedor.</p>
+    <h3>7. Preguntas y derechos</h3><p>Preguntas: <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a>. Consulta también la <a href="./index.html">Política de privacidad</a>.</p>
+  </section>
+
+  <section class="lang-section" data-lang-section="de" lang="de" hidden>
+    <h2>Löschung deines MyPC-Kontos beantragen</h2>
+    <p>Du kannst die Löschung deines MyPC-Kontos und der damit verbundenen personenbezogenen Daten per E-Mail von der mit dem Konto verknüpften Adresse beantragen.</p>
+    <a class="cta" href="mailto:mypc.appoff@gmail.com?subject=MyPC-Konto%20l%C3%B6schen&body=Hallo%2C%0A%0Aich%20m%C3%B6chte%20die%20L%C3%B6schung%20meines%20MyPC-Kontos%20beantragen.%0A%0AMyPC-Benutzername%3A%20%0AKonto-E-Mail%3A%20%0A%0AVielen%20Dank.">Löschanfrage senden</a>
+    <p>Adresse: <strong><a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a></strong></p>
+    <h3>1. Erforderliche Angaben</h3><ul><li>dein MyPC-Benutzername;</li><li>die mit dem Konto verknüpfte E-Mail-Adresse;</li><li>die eindeutige Erklärung, dass dein MyPC-Konto gelöscht werden soll.</li></ul><p>Zum Schutz des Kontos kann MyPC eine angemessene Identitätsprüfung verlangen. Sende niemals dein Passwort.</p>
+    <h3>2. Betroffene Daten</h3><p>Eine bestätigte Anfrage zielt darauf ab, nicht mehr benötigte kontobezogene Daten zu löschen oder zu anonymisieren, darunter Profil, persönliche Sammlungen und Listen, aktive Angebote, soziale Verknüpfungen, Benachrichtigungstoken und zugehörige Inhalte.</p><p>Wurden Nachrichten oder Inhalte mit anderen Nutzern geteilt, können einzelne Kopien, die zwingend für die Integrität einer Unterhaltung oder als Transaktionsnachweis erforderlich sind, anonymisiert statt sofort gelöscht werden.</p>
+    <h3>3. Daten, die aufbewahrt werden können</h3><p class="notice">Bestimmte Informationen können nach Kontolöschung getrennt aufbewahrt werden, wenn dies gesetzlich erforderlich ist, der Betrugsprävention, einem Streitfall, einer laufenden Transaktion oder der Rechtsverteidigung dient. Soweit Buchhaltungspflichten gelten, können entsprechende Unterlagen bis zu 10 Jahre aufzubewahren sein.</p>
+    <h3>4. Frist</h3><p>MyPC bearbeitet Anfragen unverzüglich. Wenn die DSGVO gilt, erfolgt grundsätzlich innerhalb eines Monats nach Eingang eine Antwort, vorbehaltlich einer gesetzlich zulässigen Verlängerung wegen Komplexität oder Anzahl der Anfragen.</p>
+    <h3>5. Laufende Bestellungen oder Transaktionen</h3><p>Bei noch laufenden Bestellungen, Zahlungen, Erstattungen, Streitfällen oder Sendungen kann MyPC vorübergehend nur die hierfür erforderlichen Daten bis zum Abschluss speichern und anschließend die vorgeschriebene Löschung oder Archivierung vornehmen.</p>
+    <h3>6. Dienstleister</h3><p>Wenn notwendige Dienstleister kontobezogene Daten verarbeitet haben, ergreift MyPC die vernünftigerweise erforderlichen Schritte zur Löschung oder zur Aufforderung zur Löschung, vorbehaltlich eigener gesetzlicher Aufbewahrungspflichten des Anbieters.</p>
+    <h3>7. Fragen und Rechte</h3><p>Fragen: <a href="mailto:mypc.appoff@gmail.com">mypc.appoff@gmail.com</a>. Siehe auch die <a href="./index.html">Datenschutzerklärung</a>.</p>
+  </section>
+
+  <footer>MyPC — Ta collection. Ta communauté. / Your collection. Your community.</footer>
+</main>
+<script>
+(function(){const supported=['fr','en','es','de'];const initial=(navigator.language||'fr').slice(0,2).toLowerCase();function setLanguage(lang){if(!supported.includes(lang))lang='fr';document.documentElement.lang=lang;document.querySelectorAll('[data-lang-section]').forEach(el=>el.hidden=el.dataset.langSection!==lang);document.querySelectorAll('button[data-lang]').forEach(btn=>btn.setAttribute('aria-pressed',String(btn.dataset.lang===lang)));}document.querySelectorAll('button[data-lang]').forEach(btn=>btn.addEventListener('click',()=>setLanguage(btn.dataset.lang)));setLanguage(supported.includes(initial)?initial:'fr');})();
+</script>
 </body>
 </html>
